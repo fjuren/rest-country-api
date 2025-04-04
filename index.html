@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REST Countries Explorer</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>REST Countries Explorer</h1>
+        <p>Search for a country to get information</p>
+      </header>
+
+      <section class="search-section">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Search for a country..."
+          />
+          <button type="submit" id="search-button">Search</button>
+        </form>
+      </section>
+
+      <div class="error-message" id="error-message">
+        Country not found. Please try another search.
+      </div>
+
+      <section class="results-container" id="results-container">
+        <div class="country-card">
+          <div class="flag-container">
+            <img
+              id="flag-img"
+              style="width: 200; height: 100"
+              alt="Country Flag"
+            />
+          </div>
+          <div class="country-info">
+            <h2 id="country-name"></h2>
+            <div class="info-grid">
+              <div class="info-item">
+                <span class="info-label">Official Name:</span>
+                <span id="official-name"></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Capital:</span>
+                <span id="capital-city"></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Population:</span>
+                <span id="population"></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Region:</span>
+                <span id="region"></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Subregion:</span>
+                <span id="subregion"></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Languages:</span>
+                <span id="languages"></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Currencies:</span>
+                <span id="currencies"></span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Area:</span>
+                <span id="area"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
